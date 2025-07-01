@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  body {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@keyframes letterGlow {
+  0%, 100% {
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    color: #fb923c;
+    text-shadow: 0 0 20px rgba(251, 146, 60, 0.8);
+  }
+}
+
+.animate-letter-glow {
+  animation: letterGlow 2s ease-in-out infinite;
+}
